@@ -1,0 +1,50 @@
+//
+//  Localizable.strings
+//  StarterApp
+//
+//  Created by Osama N. AlDuwaik on 12/01/2025.
+//
+
+// General
+"Settings" = "الإعدادات";
+"Language" = "اللغة";
+"Home" = "الرئيسية";
+"My List" = "قائمتي";
+"Item" = "عنصر";
+"Welcome" = "مرحباً";
+
+// Language Selection First Time
+"Select Language" = "اختيار اللغة";
+"The app will shut down to set the language. Please reopen the app to continue setup." = "سيتم إغلاق التطبيق لتعيين اللغة. الرجاء إعادة فتح التطبيق لمتابعة الإعداد.";
+
+// Language Change Alert (When currently in Arabic)
+"Change Language" = "تغيير اللغة";
+"The app will shut down to change the language. Please reopen the app to see the changes." = "سيتم إغلاق التطبيق لتغيير اللغة. الرجاء إعادة فتح التطبيق لرؤية التغييرات.";
+"Cancel" = "إلغاء";
+"Change" = "تغيير";
+"Confirm" = "تأكيد";
+
+// Onboarding
+"Next" = "التالي";
+"Skip" = "تخطي";
+"Get Started" = "ابدأ الآن";
+"onboarding_title_1" = "مرحباً بك في التطبيق ثنائي اللغة";
+"onboarding_desc_1" = "اختبر قوة التواصل ثنائي اللغة";
+"onboarding_title_2" = "اختر لغتك";
+"onboarding_desc_2" = "التبديل السلس بين العربية والإنجليزية";
+
+// Authentication
+"sign_in" = "تسجيل الدخول";
+"sign_up" = "إنشاء حساب";
+"email" = "البريد الإلكتروني";
+"password" = "كلمة المرور";
+"confirm_password" = "تأكيد كلمة المرور";
+"forgot_password" = "نسيت كلمة المرور؟";
+"continue_as_guest" = "المتابعة كضيف";
+"reset_password" = "إعادة تعيين كلمة المرور";
+
+// Weight
+"what is your goal weight?" = "هدفك؟";
+"we use these info to help you" = "نستخدم المعلومات لمساعدتك";
+"gain weight?" = "زيادة الوزن؟";
+"next" = "التالي";

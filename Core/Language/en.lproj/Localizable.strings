@@ -1,0 +1,50 @@
+//
+//  Localizable.strings
+//  StarterApp
+//
+//  Created by Osama N. AlDuwaik on 12/01/2025.
+//
+
+// General
+"Settings" = "Settings";
+"Language" = "Language";
+"Home" = "Home";
+"My List" = "My List";
+"Item" = "Item";
+"Welcome" = "Welcome";
+
+// Language Selection First Time
+"Select Language" = "Select Language";
+"The app will shut down to set the language. Please reopen the app to continue setup." = "The app will shut down to set the language. Please reopen the app to continue setup.";
+
+// Language Change Alert (When currently in English)
+"Change Language" = "Change Language";
+"The app will shut down to change the language. Please reopen the app to see the changes." = "The app will shut down to change the language. Please reopen the app to see the changes.";
+"Cancel" = "Cancel";
+"Change" = "Change";
+"Confirm" = "Confirm";
+
+// Onboarding
+"Next" = "Next";
+"Skip" = "Skip";
+"Get Started" = "Get Started";
+"onboarding_title_1" = "Welcome to BilingualApp";
+"onboarding_desc_1" = "Experience the power of bilingual communication";
+"onboarding_title_2" = "Choose Your Language";
+"onboarding_desc_2" = "Seamlessly switch between English and Arabic";
+
+// Authentication
+"sign_in" = "Sign In";
+"sign_up" = "Sign Up";
+"email" = "Email";
+"password" = "Password";
+"confirm_password" = "Confirm Password";
+"forgot_password" = "Forgot Password?";
+"continue_as_guest" = "Continue as Guest";
+"reset_password" = "Reset Password";
+
+// Weight
+"what is your goal weight?" = "what is your goal weight?";
+"we use these info to help you" = "we use these info to help you";
+"gain weight?" = "gain weight?";
+"next" = "Next";

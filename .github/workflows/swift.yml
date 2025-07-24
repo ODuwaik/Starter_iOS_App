@@ -1,0 +1,62 @@
+name: Swift
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: macos-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.0'
+        bundler-cache: true
+    
+    - name: Install CocoaPods
+      run: |
+        gem install cocoapods
+        pod setup
+    
+    - name: Create GoogleService-Info.plist placeholder
+      run: |
+        echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+        <!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+        <plist version=\"1.0\">
+        <dict>
+            <key>CLIENT_ID</key>
+            <string>test-client-id</string>
+            <key>API_KEY</key>
+            <string>test-api-key</string>
+            <key>GCM_SENDER_ID</key>
+            <string>test-sender-id</string>
+            <key>PLIST_VERSION</key>
+            <string>1</string>
+            <key>BUNDLE_ID</key>
+            <string>com.test.starterapp</string>
+            <key>PROJECT_ID</key>
+            <string>test-project</string>
+            <key>STORAGE_BUCKET</key>
+            <string>test-bucket</string>
+        </dict>
+        </plist>" > StarterApp/GoogleService-Info.plist
+    
+    - name: Install dependencies
+      run: |
+        pod install --repo-update
+      
+    - name: Build
+      run: |
+        xcodebuild clean build -workspace StarterApp.xcworkspace -scheme StarterApp -destination 'platform=iOS Simulator,name=iPhone 14'
+      
+    # Uncomment when tests are implemented
+    # - name: Run tests
+    #   run: |
+    #     xcodebuild test -workspace StarterApp.xcworkspace -scheme StarterApp -destination 'platform=iOS Simulator,name=iPhone 14'
