@@ -27,7 +27,6 @@ This starter app provides a complete authentication system with email/password a
 - Xcode 14.0+
 - iOS 15.0+ target deployment
 - Swift 5.5+
-- CocoaPods (for Firebase dependencies)
 - A Firebase project
 
 ### 🔥 Quick Start
@@ -36,14 +35,11 @@ This starter app provides a complete authentication system with email/password a
 # Clone the repo
 git clone https://github.com/ODuwaik/Starter_iOS_App.git
 cd Starter_iOS_App
-
-# Install dependencies
-pod install
 ```
 
 1. Get your `GoogleService-Info.plist` from [Firebase Console](https://console.firebase.google.com/)
 2. Add it to the `StarterApp` directory
-3. Open the `.xcworkspace` file and run the app
+3. Open the `.xcodeproj` file and run the app
 
 ## Project Structure
 
